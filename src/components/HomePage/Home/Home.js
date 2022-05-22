@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../../CommonPages/Banner/Banner';
+import Carousel from '../Carousel/Carousel';
 import Products from '../Products/Products';
 import Review from '../Review/Review';
 import Samary from '../Samary/Samary';
@@ -14,6 +15,7 @@ const Home = () => {
         <Samary></Samary>
         <Review></Review>
         <Visualizations></Visualizations>
+        <Carousel></Carousel>
       </div>
     </div>
   );
