@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
   return (
-    <div class="hero min-h-screen">
+    <div class="hero min-h-screen" style={{"background-image": 'url(https://i.ibb.co/y8K5rz3/banner.webp?w=1000&h=600)'}}>
       <div class="hero-overlay bg-opacity-60"></div>
       <div class="hero-content text-center text-neutral-content">
         <div class="max-w-md">
