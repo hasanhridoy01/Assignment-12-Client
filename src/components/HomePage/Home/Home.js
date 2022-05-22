@@ -3,6 +3,7 @@ import Banner from '../../CommonPages/Banner/Banner';
 import Products from '../Products/Products';
 import Review from '../Review/Review';
 import Samary from '../Samary/Samary';
+import Visualizations from '../Visualizations/Visualizations';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Products></Products>
         <Samary></Samary>
         <Review></Review>
+        <Visualizations></Visualizations>
       </div>
     </div>
   );
