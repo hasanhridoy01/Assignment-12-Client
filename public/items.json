@@ -2,54 +2,54 @@
   {
     "id": 1,
     "name": "Tape Measure",
-    "short-description": "A standard tape measure is used for all kinds of field measurements, such as setting heights for switches and outlets, centering lighting fixture boxes, and marking surfaces for cutouts.",
-    "minimum-quantity": 100,
-    "available-quantity": 1000,
+    "shortDescription": "A standard tape measure is used for all kinds of field measurements, such as setting heights for switches and outlets, centering lighting fixture boxes, and marking surfaces for cutouts.",
+    "minimumQuantity": 100,
+    "availableQuantity": 1000,
     "price": 100,
     "img": "https://i.ibb.co/TTVXfmM/1000-F-304173890-07-ZOcx-Ily-Ca5dumxilwyw-XPXic72kh-Qb.jpg"
   },
   {
     "id": 2,
     "name": "Hammer",
-    "short-description": "A hammer is used to secure electrical boxes equipped with nail-on brackets to wall studs and other framing members in a home. You’ll also need one to drive wire staples when anchoring new electrical cable to framing members.",
-    "minimum-quantity": 100,
-    "available-quantity": 1000,
+    "shortDescription": "A hammer is used to secure electrical boxes equipped with nail-on brackets to wall studs and other framing members in a home. You’ll also need one to drive wire staples when anchoring new electrical cable to framing members.",
+    "minimumQuantity": 100,
+    "availableQuantity": 1000,
     "price": 100,
     "img": "https://i.ibb.co/Bgxmp1Z/hammer-nails-isolated-1308-32166.webp"
   },
   {
     "id": 3,
     "name": "Torpedo Level",
-    "short-description": "A small level, such as a torpedo level, fits easily in a tool pouch and is used to make sure your work is level and plumb. A great installation starts with level boxes and straight switch and outlet receptacles.",
-    "minimum-quantity": 100,
-    "available-quantity": 1000,
+    "shortDescription": "A small level, such as a torpedo level, fits easily in a tool pouch and is used to make sure your work is level and plumb. A great installation starts with level boxes and straight switch and outlet receptacles.",
+    "minimumQuantity": 100,
+    "availableQuantity": 1000,
     "price": 100,
     "img": "https://i.ibb.co/W3ZKGXt/professional-level-hand-yellow-background-142883-2285.webp"
   },
   {
     "id": 4,
     "name": "Flashlight",
-    "short-description": "Electrical repair and improvement work involves a lot of dark places, from attics and basements, to wall and ceiling cavities, to the insides of electrical boxes. A tactical flashlight is needed as much for safety as it is for convenience. A couple of hand flashlights and a headlamp are good additions to an DIY electrician's toolbox.",
-    "minimum-quantity": 100,
-    "available-quantity": 1000,
+    "shortDescription": "Electrical repair and improvement work involves a lot of dark places, from attics and basements, to wall and ceiling cavities, to the insides of electrical boxes. A tactical flashlight is needed as much for safety as it is for convenience. A couple of hand flashlights and a headlamp are good additions to an DIY electrician's toolbox.",
+    "minimumQuantity": 100,
+    "availableQuantity": 1000,
     "price": 100,
     "img": "https://i.ibb.co/zxbxYpV/large-black-lantern-white-backgroundxa-563818-3105.webp"
   },
   {
     "id": 5,
     "name": "Utility Knife",
-    "short-description": "A utility knife, or box cutter, is handy for cutting sheathing from non-metallic (Romex) cable, to cut off electrical tape, and to open cardboard boxes.",
-    "minimum-quantity": 100,
-    "available-quantity": 1000,
+    "shortDescription": "A utility knife, or box cutter, is handy for cutting sheathing from non-metallic (Romex) cable, to cut off electrical tape, and to open cardboard boxes.",
+    "minimumQuantity": 100,
+    "availableQuantity": 1000,
     "price": 100,
     "img": "https://i.ibb.co/8XJ8XnS/top-electrical-tools-1152575-05-utilityknife-3256-339e9f7202a2438885c9913982799076.webp"
   },
   {
     "id": 6,
     "name": "Tongue-and-Groove Pliers",
-    "short-description": "Electrical repair and improvement work involves a lot of dark places, from attics and basements, to wall and ceiling cavities, to the insides of electrical boxes. A tactical flashlight is needed as much for safety as it is for convenience. A couple of hand flashlights and a headlamp are good additions to an DIY electrician's toolbox.",
-    "minimum-quantity": 100,
-    "available-quantity": 1000,
+    "shortDescription": "Electrical repair and improvement work involves a lot of dark places, from attics and basements, to wall and ceiling cavities, to the insides of electrical boxes. A tactical flashlight is needed as much for safety as it is for convenience. A couple of hand flashlights and a headlamp are good additions to an DIY electrician's toolbox.",
+    "minimumQuantity": 100,
+    "availableQuantity": 1000,
     "price": 100,
     "img": "https://i.ibb.co/q7Z7mWc/top-electrical-tools-1152575-09-tonguegroovepliers-3242-10f7403cafb44b7bb11ae89a31b8f865.webp"
   }
