@@ -16,7 +16,7 @@ const Header = () => {
     {/* <li className='text-xl font-bold text-secondary'>{user ? <button className="btn btn-ghost"  onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li> */}
   </>
   return (
-    <div className="navbar bg-primary">
+    <div className="navbar bg-primary sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabindex="0" className="btn btn-ghost lg:hidden">
