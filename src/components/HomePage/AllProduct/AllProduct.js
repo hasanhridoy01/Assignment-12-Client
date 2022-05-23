@@ -1,8 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useProduct from '../../../Hooks/useProduct';
 
 const AllProduct = () => {
   const [products, setProduct] = useProduct();
+  const navigate = useNavigate();
+
+  //handle single info
+  const handleSingleInfo = id => {
+    navigate(`/purchase/${id}`);
+  }
   return (
     <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-10'>
     {
@@ -18,7 +25,7 @@ const AllProduct = () => {
                 <p>availableQuantity :{product.availableQuantity}</p>
                 <p>shortDescription: {product.shortDescription.slice(0, 100)}</p>
                 <div class="card-actions justify-end">
-                    <a class="btn btn-primary" href='/purchase'>Purchase Now</a>
+                    <a class="btn btn-primary" href='' onClick={() => handleSingleInfo(product._id)}>Purchase Now</a>
                 </div>
               </div>
             </div>
