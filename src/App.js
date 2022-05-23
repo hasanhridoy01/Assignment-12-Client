@@ -9,6 +9,7 @@ import MyProfile from './components/MyProfile/MyProfile';
 import Login from './components/AuthPages/Login/Login';
 import Registration from './components/AuthPages/Registration/Registration';
 import RequireAuth from './components/AuthPages/RequireAuth';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
             <Purchase></Purchase>
           </RequireAuth>
          }></Route>
+         <Route path='/dashboard' element={ 
+           <RequireAuth>
+             <Dashboard></Dashboard>
+           </RequireAuth>
+          }></Route>
         <Route path='/login' element={ <Login></Login> }></Route>
         <Route path='/registration' element={ <Registration></Registration> }></Route>
       </Routes>

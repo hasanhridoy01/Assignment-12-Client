@@ -21,10 +21,10 @@ const Header = () => {
     <li className='text-xl font-bold text-secondary'><Link to='/allproducts'>AllProducts</Link></li>
     <li className='text-xl font-bold text-secondary'><Link to='/myprofile'>MyProfile</Link></li>
     <li className='text-xl font-bold text-secondary'><Link to='/blog'>Blog</Link></li>
-    {/* {
+    {
       user &&  <li className='text-xl font-bold text-secondary'><Link to='/dashboard'>Dashboard</Link></li>
-    } */}
-    <li className='text-xl font-bold text-secondary'>{user ? <button className="btn btn-ghost text-xl"  onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
+    }
+    <li className='text-primary'>{user ? <button className="btn btn-secondary"  onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
   </>
   return (
     <div className="navbar bg-primary sticky top-0 z-50">
