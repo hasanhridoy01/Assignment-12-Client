@@ -5,6 +5,7 @@ import Header from './components/CommonPages/Header/Header'
 import Home from './components/HomePage/Home/Home';
 import AllProduct from './components/HomePage/AllProduct/AllProduct';
 import Purchase from './components/HomePage/Purchase/Purchase';
+import MyProfile from './components/MyProfile/MyProfile';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={ <Home></Home> }></Route>
         <Route path='/home' element={ <Home></Home> }></Route>
         <Route path='/allproducts' element={ <AllProduct></AllProduct> }></Route>
+        <Route path='/myprofile' element={ <MyProfile></MyProfile> }></Route>
         <Route path='/purchase' element={ <Purchase></Purchase> }></Route>
       </Routes>
       <Footer></Footer>
