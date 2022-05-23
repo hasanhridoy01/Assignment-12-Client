@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import Loading from '../../CommonPages/Loading/Loading';
+import useToken from '../../../Hooks/userToken';
 
 const Registration = () => {
   //Login with Google
@@ -14,14 +15,17 @@ const Registration = () => {
 
   //Sign Up with Email and Password
   const [
-        createUserWithEmailAndPassword,
-        user,
-        loading,
-        error,
+      createUserWithEmailAndPassword,
+      user,
+      loading,
+      error,
   ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
 
   //user profile update
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
+  //use token
+  const [token] = useToken(user || gUser);
 
   //navigate with another page
   const navigate = useNavigate();
@@ -39,14 +43,13 @@ const Registration = () => {
 
   //find user
   if (user || gUser) {
-      navigate('/home');
+    navigate('/home');
   }
 
   //submit form
   const onSubmit = async data => {
     await createUserWithEmailAndPassword(data.email, data.password);
     await updateProfile({ displayName: data.name });
-    console.log('update done');
   }
   return (
     <div className='flex justify-center items-center my-10'>
