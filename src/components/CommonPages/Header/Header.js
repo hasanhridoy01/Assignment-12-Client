@@ -6,10 +6,9 @@ const Header = () => {
   const menuItems = 
   <>
     <li className='text-xl font-bold text-secondary'><Link to='/home'>Home</Link></li>
-    <li className='text-xl font-bold text-secondary'><Link to='/appiontment'>Appointment</Link></li>
-    <li className='text-xl font-bold text-secondary'><Link to='/reviews'>Reviews</Link></li>
-    <li className='text-xl font-bold text-secondary'><Link to='/contect'>Contect</Link></li>
-    <li className='text-xl font-bold text-secondary'><Link to='/about'>About</Link></li>
+    <li className='text-xl font-bold text-secondary'><Link to='/allproducts'>AllProducts</Link></li>
+    <li className='text-xl font-bold text-secondary'><Link to='/myprofile'>MyProfile</Link></li>
+    <li className='text-xl font-bold text-secondary'><Link to='/blog'>Blog</Link></li>
     {/* {
       user &&  <li className='text-xl font-bold text-secondary'><Link to='/dashboard'>Dashboard</Link></li>
     } */}

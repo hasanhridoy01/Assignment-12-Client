@@ -6,7 +6,7 @@ const Products = () => {
   return (
     <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-10'>
       {
-        products.map(product => {
+        products.slice(0, 6).map(product => {
           return (
             <div>
               <div class="card lg:w-90 bg-base-300 shadow-xl">
@@ -26,6 +26,7 @@ const Products = () => {
           );
         })
       }
+     <a className='btn btn-primary items-center' href='/allproducts'>AllProduct</a>
     </div>
   );
 };

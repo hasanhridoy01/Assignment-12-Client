@@ -2,7 +2,7 @@ import React from 'react';
 
 const Carousel = () => {
   return (
-   <div className="mt-20 mb-10 mr-10 ml-10">
+   <div className="mt-20 mb-10 mr-10 ml-10 text-center">
      <h1 className='my-10 text-2xl font-bold text-secondary'>My Future Product</h1>
       <div class="carousel carousel-center rounded-box">
         <div class="carousel-item">

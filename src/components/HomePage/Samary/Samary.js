@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Samary = () => {
   return (
     <div class="mockup-window border border-primary mt-10 mb-20 mr-10 ml-10 shadow-xl">
-      <div class="grid justify-center px-4 py-16 border-t border-secondary">
+      <div class="grid justify-center px-4 py-16 border-t border-secondary text-center">
         <h1 className='text-4xl font-bold text-secondary'>MILLIONS BUSINESS TRUST US</h1>
         <h6 className='mt-2 text-xl font-bold text-primary'>TRY TO UNDERSTAND USERS EXPECTATION</h6>
         <div className="divider text-success"></div>
