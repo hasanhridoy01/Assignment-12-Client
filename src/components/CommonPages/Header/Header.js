@@ -1,7 +1,19 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
 
 const Header = () => {
+  const [user] = useAuthState(auth);
+  const navigate =  useNavigate();
+  
+  //user logout
+  const logout = () => {
+    signOut(auth);
+    // localStorage.removeItem('accessToken');
+    navigate('/login');
+  };
 
   const menuItems = 
   <>
@@ -12,7 +24,7 @@ const Header = () => {
     {/* {
       user &&  <li className='text-xl font-bold text-secondary'><Link to='/dashboard'>Dashboard</Link></li>
     } */}
-    {/* <li className='text-xl font-bold text-secondary'>{user ? <button className="btn btn-ghost"  onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li> */}
+    <li className='text-xl font-bold text-secondary'>{user ? <button className="btn btn-ghost text-xl"  onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
   </>
   return (
     <div className="navbar bg-primary sticky top-0 z-50">
@@ -25,7 +37,7 @@ const Header = () => {
             {menuItems}
           </ul>
         </div>
-        <a className="btn btn-ghost text-base-100 normal-case text-3xl">Eletric Items</a>
+        <a className="btn btn-ghost text-base-100 normal-case text-3xl">Electric Items</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">

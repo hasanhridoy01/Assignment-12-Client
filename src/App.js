@@ -6,6 +6,8 @@ import Home from './components/HomePage/Home/Home';
 import AllProduct from './components/HomePage/AllProduct/AllProduct';
 import Purchase from './components/HomePage/Purchase/Purchase';
 import MyProfile from './components/MyProfile/MyProfile';
+import Login from './components/AuthPages/Login/Login';
+import Registration from './components/AuthPages/Registration/Registration';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path='/allproducts' element={ <AllProduct></AllProduct> }></Route>
         <Route path='/myprofile' element={ <MyProfile></MyProfile> }></Route>
         <Route path='/purchase' element={ <Purchase></Purchase> }></Route>
+        <Route path='/login' element={ <Login></Login> }></Route>
+        <Route path='/registration' element={ <Registration></Registration> }></Route>
       </Routes>
       <Footer></Footer>
     </div>
