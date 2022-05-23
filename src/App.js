@@ -8,6 +8,7 @@ import Purchase from './components/HomePage/Purchase/Purchase';
 import MyProfile from './components/MyProfile/MyProfile';
 import Login from './components/AuthPages/Login/Login';
 import Registration from './components/AuthPages/Registration/Registration';
+import RequireAuth from './components/AuthPages/RequireAuth';
 
 function App() {
   return (
@@ -18,7 +19,11 @@ function App() {
         <Route path='/home' element={ <Home></Home> }></Route>
         <Route path='/allproducts' element={ <AllProduct></AllProduct> }></Route>
         <Route path='/myprofile' element={ <MyProfile></MyProfile> }></Route>
-        <Route path='/purchase' element={ <Purchase></Purchase> }></Route>
+        <Route path='/purchase' element={ 
+          <RequireAuth>
+            <Purchase></Purchase>
+          </RequireAuth>
+         }></Route>
         <Route path='/login' element={ <Login></Login> }></Route>
         <Route path='/registration' element={ <Registration></Registration> }></Route>
       </Routes>
