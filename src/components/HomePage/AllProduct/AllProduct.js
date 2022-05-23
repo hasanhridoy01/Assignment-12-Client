@@ -13,17 +13,19 @@ const AllProduct = () => {
               <figure><img src={product.img} alt="Shoes" /></figure>
               <div class="card-body items-center">
                 <h2 class="card-title">{product.name}</h2>
-                <p>Price $ :{product.price}</p>
+                <p>singleItemsPrice $ :{product.price}</p>
                 <p>minimumQuantity :{product.minimumQuantity}</p>
                 <p>availableQuantity :{product.availableQuantity}</p>
                 <p>shortDescription: {product.shortDescription.slice(0, 100)}</p>
+                <div class="card-actions justify-end">
+                    <a class="btn btn-primary" href='/purchase'>Purchase Now</a>
+                </div>
               </div>
             </div>
           </div>
         );
       })
     }
-   <button className='btn btn-primary items-center'>AllProduct</button>
   </div>
   );
 };
