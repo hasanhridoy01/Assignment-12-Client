@@ -10,10 +10,13 @@ import Login from './components/AuthPages/Login/Login';
 import Registration from './components/AuthPages/Registration/Registration';
 import RequireAuth from './components/AuthPages/RequireAuth';
 import Dashboard from './components/Dashboard/Dashboard';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <div className="">
+      <ToastContainer />
       <Header></Header>
       <Routes>
         <Route path='/' element={ <Home></Home> }></Route>
