@@ -42,7 +42,7 @@ const Registration = () => {
   }
 
   //find user
-  if (user || gUser) {
+  if (token) {
     navigate('/home');
   }
 

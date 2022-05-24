@@ -11,7 +11,7 @@ const Header = () => {
   //user logout
   const logout = () => {
     signOut(auth);
-    // localStorage.removeItem('accessToken');
+    localStorage.removeItem('accessToken');
     navigate('/login');
   };
 
@@ -22,9 +22,9 @@ const Header = () => {
     <li className='text-xl font-bold text-secondary'><Link to='/myprofile'>MyProfile</Link></li>
     <li className='text-xl font-bold text-secondary'><Link to='/blog'>Blog</Link></li>
     {
-      user &&  <li className='text-xl font-bold text-secondary'><Link to='/dashboard'>Dashboard</Link></li>
+      user &&  <li className='text-xl font-bold text-secondary mr-2'><Link to='/dashboard'>Dashboard</Link></li>
     }
-    <li className='text-primary'>{user ? <button className="btn btn-secondary"  onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
+    <li className='text-primary'>{user ? <button className="btn btn-secondary"  onClick={logout} >Sign Out</button> : <Link to="/login" className='text-secondary font-bold text-xl'>Login</Link>}</li>
   </>
   return (
     <div className="navbar bg-primary sticky top-0 z-50">
