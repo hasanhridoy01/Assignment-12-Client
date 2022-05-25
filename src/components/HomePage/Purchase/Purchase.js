@@ -8,6 +8,7 @@ const Purchase = () => {
   const [user] = useAuthState(auth);
   const {itemsId} = useParams();
   const [items, setItems] = useState({});
+  // const [error, setError] = useState(false);
  
   useEffect(() => {
     //set url
@@ -64,6 +65,17 @@ const Purchase = () => {
       })
     }
   }
+
+  // handle quantity value
+  // const handleQuantity = e => {
+  //   const inputValue = e.target.value;
+  //   if(inputValue < minimumQuantity || inputValue > availableQuantity){
+  //     return true;
+  //   }else if(inputValue > minimumQuantity || inputValue < availableQuantity){
+  //     return false
+  //   }
+  //   setError(inputValue);
+  // }
 
   return (
     <div className='p-10 grid place-items-center bg-base-300'>

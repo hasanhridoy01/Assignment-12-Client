@@ -23,6 +23,7 @@ const AllUser = () => {
                 <tr>
                     <th>email</th>
                     <th>Admin</th>
+                    <th>Access Label</th>
                     <th>Delete</th>
                 </tr>
             </thead>

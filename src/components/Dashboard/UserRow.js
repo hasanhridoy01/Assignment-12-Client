@@ -2,7 +2,7 @@ import React from 'react';
 import { toast } from 'react-toastify';
 
 const UserRow = ({user}) => {
-  const {email, role} = user;
+  const {_id, email, role} = user;
 
   //make admin
   const handleAdmin = () => {
@@ -25,11 +25,28 @@ const UserRow = ({user}) => {
       }
     })
   }
+
+  //handle Remove user
+  const handleDeleteUser = (id) => {
+    const url = `http://localhost:5000/user/${email}`;
+    fetch(url, {
+      method: 'DELETE',
+      headers: {
+        'content-type': 'application/json',
+        'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+      },
+    })
+    .then(res => res.json())
+    .then(data => {
+      toast("User Deleted Successful!");
+    })
+  }
   return (
     <tr>
         <td>{email}</td>
         <td>{role !== "admin" && <button onClick={handleAdmin} className='btn btn-xs'>Make Admin</button>}</td>
-        <td><button className='btn btn-xs'>Remove User</button></td>
+        <td>{role === "admin" ? <h5 className='text-secondary font-bold'>Admin</h5> : <h5 className='text-primary font-bold'>No Admin</h5>}</td>
+        <td>{ role !== "admin" && <button onClick={() => handleDeleteUser(_id)} className='btn btn-xs'>Remove User</button>}</td>
     </tr>
   );
 };
