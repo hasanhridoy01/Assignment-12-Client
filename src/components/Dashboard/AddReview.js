@@ -66,6 +66,8 @@ const AddReview = () => {
                 </label>
                 <input
                   type="text"
+                  defaultValue={user.displayName}
+                  readOnly
                   placeholder="Your Name"
                   className="input input-bordered input-secondary w-full max-w-xs"
                   {...register("name", {
@@ -87,6 +89,8 @@ const AddReview = () => {
                 <input
                   type="email"
                   placeholder="Your Email"
+                  defaultValue={user.email}
+                  readOnly
                   className="input input-bordered input-secondary w-full max-w-xs"
                   {...register("email", {
                     required: {

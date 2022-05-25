@@ -1,8 +1,11 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+import auth from '../../firebase.init';
 
 const AddProduct = () => {
+  const [user] = useAuthState(auth);
   //handle form submit
   const { register, formState: { errors }, handleSubmit } = useForm();
 
@@ -86,6 +89,8 @@ const AddProduct = () => {
                 <input
                   type="email"
                   placeholder="Your Email"
+                  readOnly
+                  defaultValue={user.email}
                   className="input input-bordered input-secondary w-full max-w-xs"
                   {...register("email", {
                     required: {

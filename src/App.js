@@ -19,6 +19,9 @@ import AddReview from './components/Dashboard/AddReview';
 import MyReview from './components/Dashboard/MyReview';
 import AddProduct from './components/Dashboard/AddProduct';
 import MyProduct from './components/Dashboard/MyProduct';
+import Payment from './components/Dashboard/Payment';
+import DefaultPage from './components/DefaultPage/DefaultPage';
+import Blog from './components/Blog/Blog';
 
 function App() {
   return (
@@ -51,10 +54,13 @@ function App() {
             <Route path='myreview' element={<MyReview></MyReview>}></Route>
             <Route path='addproduct' element={<AddProduct></AddProduct>}></Route>
             <Route path='myproduct' element={<MyProduct></MyProduct>}></Route>
+            <Route path='payment/:paymentId' element={<Payment></Payment>}></Route>
           </Route>
 
         <Route path='/login' element={ <Login></Login> }></Route>
         <Route path='/registration' element={ <Registration></Registration> }></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='*' element={<DefaultPage></DefaultPage>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
