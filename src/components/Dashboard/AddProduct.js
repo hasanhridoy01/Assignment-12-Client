@@ -26,6 +26,7 @@ const AddProduct = () => {
         const product = {
           name: data.name,
           price: data.price,
+          email: data.email,
           minimumQuantity: data.minimumQuantity,
           availableQuantity: data.availableQuantity,
           shortDescription: data.shortDescription,
@@ -75,6 +76,31 @@ const AddProduct = () => {
                 />
                 <label className="label">
                   {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
+                </label>
+              </div>
+
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text">UserEmail</span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="input input-bordered input-secondary w-full max-w-xs"
+                  {...register("email", {
+                    required: {
+                      value: true,
+                      message: 'Email is Required'
+                    },
+                    pattern: {
+                      value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                      message: 'Provide a valid Email'
+                    }
+                  })}
+                />
+                <label className="label">
+                  {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                  {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
                 </label>
               </div>
 

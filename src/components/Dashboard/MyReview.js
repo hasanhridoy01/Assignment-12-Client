@@ -46,36 +46,36 @@ const MyReview = () => {
     })
   }
   return (
-    <div>
+    <div className='px-10'>
       <h4 className='text-xl text-secondary font-bold text-center'>My Review {review.length}</h4>
       <div class="overflow-x-auto">
-            <table class="table w-full">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Images</th>
-                        <th>Payment</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                      review.map((r, index) =><tr>
-                          <th>{index + 1}</th>
-                          <td>{r.name}</td>
-                          <td>{r.email}</td>
-                          <td>
-                            <img style={{"height": '50px', "weight": '100px'}} src={r.img} alt="" />
-                          </td>
-                          <td>
-                            <button onClick={() => handleCencle(r._id)} className='btn btn-xs btn-gost'>Cencle</button>
-                          </td>
-                      </tr>)
-                    }
-                </tbody>
-            </table>
-        </div>
+        <table class="table w-full">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Images</th>
+                    <th>Payment</th>
+                </tr>
+            </thead>
+            <tbody>
+                {
+                  review.map((r, index) =><tr>
+                      <th>{index + 1}</th>
+                      <td>{r.name}</td>
+                      <td>{r.email}</td>
+                      <td>
+                        <img style={{"height": '50px', "weight": '100px'}} src={r.img} alt="" />
+                      </td>
+                      <td>
+                        <button onClick={() => handleCencle(r._id)} className='btn btn-xs btn-gost'>Cencle</button>
+                      </td>
+                  </tr>)
+                }
+            </tbody>
+        </table>
+      </div>
     </div>
   );
 };
