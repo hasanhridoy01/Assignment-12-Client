@@ -23,7 +23,7 @@ const AllProduct = () => {
                 <p>singleItemsPrice $ :{product.price}</p>
                 <p>minimumQuantity :{product.minimumQuantity}</p>
                 <p>availableQuantity :{product.availableQuantity}</p>
-                <p>shortDescription: {product.shortDescription.slice(0, 100)}</p>
+                <p>shortDescription: {product.shortDescription}</p>
                 <div class="card-actions justify-end">
                     <a class="btn btn-primary" href='' onClick={() => handleSingleInfo(product._id)}>Purchase Now</a>
                 </div>

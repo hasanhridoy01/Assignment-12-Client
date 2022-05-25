@@ -79,7 +79,7 @@ const Purchase = () => {
 
   return (
     <div className='p-10 grid place-items-center bg-base-300'>
-      <div class="card w-96 bg-base-100 shadow-xl my-10">
+      <div class="card lg:w-96 sm:w-lg bg-base-100 shadow-xl my-10">
         <figure class="px-10 pt-10">
           <img src={items.img} alt="Shoes" class="rounded-xl" />
         </figure>

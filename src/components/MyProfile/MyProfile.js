@@ -42,7 +42,7 @@ const MyProfile = () => {
   }
   return (
     <div className='p-10 grid place-items-center bg-base-300'>
-      <div class="card w-96 bg-base-100 shadow-xl my-10 items-center">
+      <div class="card lg:w-96 sm:w-lg bg-base-100 shadow-xl my-10 items-center">
         <div class="avatar mt-10">
           <div class="w-24 mask mask-squircle">
             <img src="https://api.lorem.space/image/face?hash=47449" />

@@ -23,14 +23,15 @@ const Dashboard = () => {
                         !admin &&
                         <>
                             <li className='text-secondary'><Link to="/dashboard/myorder">My Order</Link></li>
-                            <li className='text-secondary'><Link to="/dashboard/review">My Reviews</Link></li>
-                            <li className='text-secondary'><Link to="/dashboard/history">Add Review</Link></li>
+                            <li className='text-secondary'><Link to="/dashboard/myreview">My Reviews</Link></li>
+                            <li className='text-secondary'><Link to="/dashboard/addreview">Add Review</Link></li>
                         </>
                     }
                     {
                         admin && <>
                             <li className='text-secondary'><Link to="/dashboard/alluser">All User</Link></li>
-                            <li className='text-secondary'><Link to="/dashboard/history">Add Product</Link></li>
+                            <li className='text-secondary'><Link to="/dashboard/addproduct">Add Product</Link></li>
+                            <li className='text-secondary'><Link to="/dashboard/myproduct">My Product</Link></li>
                         </>
                     }
                 </ul>
