@@ -12,7 +12,7 @@ const Purchase = () => {
  
   useEffect(() => {
     //set url
-    const url = `http://localhost:5000/items/${itemsId}`;
+    const url = `https://whispering-fortress-42847.herokuapp.com/items/${itemsId}`;
     fetch(url, {
       method: "GET",
       headers: {
@@ -47,7 +47,7 @@ const Purchase = () => {
     }else if(availableQuantity < quantity){
       toast(`the order quantity can not be higher ${availableQuantity} than the available quantity`);
     }else{
-      const url = 'http://localhost:5000/order';
+      const url = 'https://whispering-fortress-42847.herokuapp.com/order';
       fetch(url, {
         method: "POST",
         headers: {

@@ -8,7 +8,7 @@ const MyProfile = () => {
   const [user] = useAuthState(auth);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/user/${user.email}`)
+    fetch(`https://whispering-fortress-42847.herokuapp.com/user/${user.email}`)
     .then(res => res.json())
     .then(data => setUsers(data));
   },[users]);
@@ -27,7 +27,7 @@ const MyProfile = () => {
     const user = {name: name, phone: phone, address: address};
 
     //data send to database
-    const url = `http://localhost:5000/updateuser/${email}`;
+    const url = `https://whispering-fortress-42847.herokuapp.com/updateuser/${email}`;
     fetch(url, {
       method: 'PUT',
       headers: {

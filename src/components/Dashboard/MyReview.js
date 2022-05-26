@@ -12,7 +12,7 @@ const MyReview = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/review?Email=${user.email}`, {
+      fetch(`https://whispering-fortress-42847.herokuapp.com/review?Email=${user.email}`, {
         method: 'GET',
         headers: {
           'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -32,7 +32,7 @@ const MyReview = () => {
 
   //handle cencle 
   const handleCencle = id => {
-    const url = `http://localhost:5000/review/${user.email}`;
+    const url = `https://whispering-fortress-42847.herokuapp.com/review/${user.email}`;
     fetch(url, {
       method: 'DELETE',
       headers: {

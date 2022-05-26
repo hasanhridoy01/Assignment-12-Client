@@ -13,7 +13,7 @@ const MyOrder = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/order?Email=${user.email}`, {
+      fetch(`https://whispering-fortress-42847.herokuapp.com/order?Email=${user.email}`, {
         method: 'GET',
         headers: {
           'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -33,7 +33,7 @@ const MyOrder = () => {
 
   //handle Remove user
   const handleItemsCancle = (id) => {
-    const url = `http://localhost:5000/order/${user.email}`;
+    const url = `https://whispering-fortress-42847.herokuapp.com/order/${user.email}`;
     fetch(url, {
       method: 'DELETE',
       headers: {

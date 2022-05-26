@@ -6,7 +6,7 @@ const UserRow = ({user}) => {
 
   //make admin
   const handleAdmin = () => {
-    const url = `http://localhost:5000/user/admin/${email}`;
+    const url = `https://whispering-fortress-42847.herokuapp.com/user/admin/${email}`;
     fetch(url, {
       method: 'PUT',
       headers: {
@@ -28,7 +28,7 @@ const UserRow = ({user}) => {
 
   //handle Remove user
   const handleDeleteUser = (id) => {
-    const url = `http://localhost:5000/user/${email}`;
+    const url = `https://whispering-fortress-42847.herokuapp.com/user/${email}`;
     fetch(url, {
       method: 'DELETE',
       headers: {

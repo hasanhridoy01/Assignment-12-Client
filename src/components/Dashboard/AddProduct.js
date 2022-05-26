@@ -36,7 +36,7 @@ const AddProduct = () => {
           img: img
         }
         // send to your database
-        fetch('http://localhost:5000/items', {
+        fetch('https://whispering-fortress-42847.herokuapp.com/items', {
           method: 'POST',
           headers: {
             'content-type': 'application/json',

@@ -10,7 +10,7 @@ const useToken = user => {
       email: email
     };
     if(email){
-      const url = `http://localhost:5000/user/${email}`;
+      const url = `https://whispering-fortress-42847.herokuapp.com/user/${email}`;
       fetch(url, {
         method: 'PUT',
         headers: {

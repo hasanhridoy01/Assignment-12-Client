@@ -10,7 +10,7 @@ const Payment = () => {
   const {paymentId} = useParams();
   const [order, setOrder] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/order/${paymentId}`, {
+    fetch(`https://whispering-fortress-42847.herokuapp.com/order/${paymentId}`, {
       method: 'GET',
       headers: {
           'authorization': `Bearer ${localStorage.getItem('accessToken')}`

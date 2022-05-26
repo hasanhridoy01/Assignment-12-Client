@@ -12,7 +12,7 @@ const MyProduct = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/item?Email=${user.email}`, {
+      fetch(`https://whispering-fortress-42847.herokuapp.com/item?Email=${user.email}`, {
         method: 'GET',
         headers: {
           'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -32,7 +32,7 @@ const MyProduct = () => {
 
   //handle delete product
   const handleDelete = id => {
-    const url = `http://localhost:5000/item/${user.email}`;
+    const url = `https://whispering-fortress-42847.herokuapp.com/item/${user.email}`;
     fetch(url, {
       method: 'DELETE',
       headers: {
