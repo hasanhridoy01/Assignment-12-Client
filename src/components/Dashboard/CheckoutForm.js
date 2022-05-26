@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { async } from '@firebase/util';
+import { toast } from 'react-toastify';
 
 const CheckoutForm = ({ order }) => {
   //card element all items
@@ -92,6 +93,7 @@ const CheckoutForm = ({ order }) => {
       .then(data => {
           setProcessing(false);
           console.log(data);
+          toast('Payment Successful!');
       })
 
     }

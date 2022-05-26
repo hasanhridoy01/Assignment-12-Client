@@ -43,9 +43,9 @@ const Purchase = () => {
     
     //check minimum and available quantity
     if(minimumQuantity > quantity){
-      toast('you cannot able to reduce the quantity below the minimum order quantity');
+      toast(`you cannot able to reduce the ${minimumQuantity} quantity below the minimum order quantity`);
     }else if(availableQuantity < quantity){
-      toast('the order quantity can not be higher than the available quantity');
+      toast(`the order quantity can not be higher ${availableQuantity} than the available quantity`);
     }else{
       const url = 'http://localhost:5000/order';
       fetch(url, {
