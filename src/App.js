@@ -22,6 +22,7 @@ import MyProduct from './components/Dashboard/MyProduct';
 import Payment from './components/Dashboard/Payment';
 import DefaultPage from './components/DefaultPage/DefaultPage';
 import Blog from './components/Blog/Blog';
+import MyPortfolio from './components/MyPortfolio/MyPortfolio';
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
         <Route path='/login' element={ <Login></Login> }></Route>
         <Route path='/registration' element={ <Registration></Registration> }></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/myportfolio' element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path='*' element={<DefaultPage></DefaultPage>}></Route>
       </Routes>
       <Footer></Footer>

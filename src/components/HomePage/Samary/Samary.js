@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faFlag, faComputer, faUser, faHand } from '@fortawesome/free-solid-svg-icons'
+import { faFlag, faComputer, faUser, faHand } from '@fortawesome/free-solid-svg-icons'
 
 const Samary = () => {
   return (

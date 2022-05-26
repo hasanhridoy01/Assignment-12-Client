@@ -17,10 +17,11 @@ const Header = () => {
 
   const menuItems = 
   <>
-    <li className='text-xl font-bold text-secondary'><Link to='/home'>Home</Link></li>
+    <li className='text-xl font-bold text-secondary lg:ml-20'><Link to='/home'>Home</Link></li>
     <li className='text-xl font-bold text-secondary'><Link to='/allproducts'>AllProducts</Link></li>
     <li className='text-xl font-bold text-secondary'><Link to='/myprofile'>MyProfile</Link></li>
     <li className='text-xl font-bold text-secondary'><Link to='/blog'>Blog</Link></li>
+    <li className='text-xl font-bold text-secondary'><Link to='/myportfolio'>My Portfolio</Link></li>
     {
       user &&  <li className='text-xl font-bold text-secondary mr-2'><Link to='/dashboard'>Dashboard</Link></li>
     }
