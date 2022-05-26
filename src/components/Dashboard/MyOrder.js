@@ -74,7 +74,7 @@ const MyOrder = () => {
                           </td>
                           <td>
                             {(o.price && !o.paid) && <Link to={`/dashboard/payment/${o._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>}
-                            {(o.Price && o.paid) && <span className='text-success'>Paid</span>}
+                            {(o.price && o.paid) && <span className='text-success'>Paid</span>}
                           </td>
                           <td>
                             {(o.price && !o.paid) && <Link to='' onClick={() => handleItemsCancle(o._id)}><button className='btn btn-xs btn-gost'>Cencle</button></Link>}
